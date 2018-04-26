@@ -1,0 +1,9 @@
+{
+    "presets": ["react", ["env", { "modules": false }], "stage-2"],
+    "plugins": ["react-hot-loader/babel", "transform-decorators"],
+    "env": {
+        "test": {
+            "plugins": ["transform-es2015-modules-commonjs"]
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "extends": ["airbnb", "prettier", "plugin:jest/recommended"],
+    "parser": "babel-eslint",
+    "plugins": ["prefer-object-spread", "jest"],
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "node": true,
+        "es6": true
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "moduleDirectory": ["src/", "node_modules"]
+            }
+        }
+    },
+    "rules": {
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline",
+                "functions": "ignore"
+            }
+        ],
+        "no-underscore-dangle": "off",
+        "curly": "warn",
+        "function-paren-newline": "off",
+        "global-require": "off",
+        "import/no-extraneous-dependencies": "off",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "jsx-a11y/anchor-is-valid": "off",
+        "no-console": "off",
+        "no-param-reassign": ["error", { "props": false }],
+        "react/jsx-filename-extension": "off",
+        "react/jsx-indent": [2, 4],
+        "react/jsx-indent-props": [2, 4],
+        "react/prop-types": "off",
+        "strict": ["error", "global"],
+        "class-methods-use-this": "off"
+    }
+}
