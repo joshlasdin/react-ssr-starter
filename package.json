@@ -5,8 +5,7 @@
     "scripts": {
         "start": "NODE_PATH=./src NODE_ENV=development node server",
         "test": "NODE_PATH=./src jest",
-        "build":
-            "rm -rf ./build && NODE_PATH=./src NODE_ENV=production webpack --config webpack.config.prod.js",
+        "build": "rm -rf ./build && NODE_PATH=./src NODE_ENV=production webpack --config webpack.config.prod.js",
         "serve": "NODE_PATH=./src NODE_ENV=production node server",
         "styleguide": "NODE_PATH=./src NODE_ENV=production styleguidist server",
         "component": "crcf -s"
@@ -53,6 +52,7 @@
         "babel-loader": "^7.1.3",
         "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
         "case-sensitive-paths-webpack-plugin": "^2.1.1",
+        "chokidar": "^2.0.3",
         "create-react-component-folder": "^0.1.15",
         "css-loader": "^0.28.10",
         "enzyme": "^3.3.0",

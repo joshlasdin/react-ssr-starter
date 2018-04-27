@@ -1,6 +1,5 @@
 import path from 'path';
 import express from 'express';
-import reactRenderer from './react-renderer';
 import hmr from './hot-modules';
 
 const PORT = process.env.PORT || 3000;
@@ -15,7 +14,8 @@ if (PRODUCTION) {
     hmr(app);
 }
 
-app.get('*', reactRenderer);
+// We require this inside a handler so it can be hot-reloaded
+app.get('*', async (...args) => require('./react-renderer').default(...args));
 
 app.listen(PORT, err => {
     if (err) return console.warn(err);

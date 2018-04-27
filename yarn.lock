@@ -1931,7 +1931,7 @@ chmodr@~0.1.0:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/chmodr/-/chmodr-0.1.2.tgz#0dd8041c915087575bec383b47827bb7576a4fd6"
 
-chokidar@^2.0.0, chokidar@^2.0.2:
+chokidar@^2.0.0, chokidar@^2.0.2, chokidar@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-2.0.3.tgz#dcbd4f6cbb2a55b4799ba8a840ac527e5f4b1176"
   dependencies:
